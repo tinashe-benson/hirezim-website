@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HireZim AI — Your agency, augmented.</title>
+  <meta name="description" content="HireZim AI builds SMS chatbots, GHL Voice AI, and n8n automation for US marketing agencies. We suit your team up for battle." />
+  <meta property="og:title" content="HireZim AI — Your agency, augmented." />
+  <meta property="og:description" content="AI automation for marketing agencies: CloseBot SMS, GHL Voice AI, n8n workflows, HubSpot integrations, A2P-compliant." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ── NAV ─────────────────────────────────────────────────────────── -->
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#top" aria-label="HireZim AI home">
+      <span class="nav__mark" aria-hidden="true"></span>
+      HIREZIM<span class="nav__ai">AI</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#about">About</a>
+      <a class="nav__cta" href="#contact">Book a call</a>
+    </nav>
+    <button class="nav__burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <span id="top"></span>
+
+  <!-- ── SCROLL-KEYFRAME HERO ────────────────────────────────────────── -->
+  <!-- Tall scroll track; the .stage inside is pinned (sticky) while the
+       4 keyframes crossfade and the captions swap on scroll progress. -->
+  <section class="hero" id="hero" aria-label="Intro">
+    <div class="stage">
+      <div class="frames" id="frames">
+        <!-- Swap these SVG placeholders for the de-watermarked frame-N.jpg -->
+        <img class="frame" src="keyframes/placeholder-1.svg" alt="A warrior kneeling in desert ruins, helmet resting on the ground beside him — unarmored." data-frame="1" />
+        <img class="frame" src="keyframes/placeholder-2.svg" alt="The warrior raising the plumed helmet, about to put it on." data-frame="2" />
+        <img class="frame" src="keyframes/placeholder-3.svg" alt="The warrior in full bronze armor, helmet on, calm and ready." data-frame="3" />
+        <img class="frame" src="keyframes/placeholder-4.svg" alt="Extreme close-up of the helmeted warrior with glowing purple eyes — menacing." data-frame="4" />
+        <div class="frames__vignette" aria-hidden="true"></div>
+      </div>
+
+      <div class="caps" id="caps" aria-hidden="false">
+        <figure class="cap" data-cap="0">
+          <p class="cap__kicker">AI automation for marketing agencies</p>
+          <h1 class="cap__title">Your team,<br><em>unarmored.</em></h1>
+          <p class="cap__sub">Manual follow-ups. Leads gone cold overnight. A team buried in busywork that software should own.</p>
+        </figure>
+        <figure class="cap" data-cap="1">
+          <h2 class="cap__title">We suit<br>you <em>up.</em></h2>
+          <p class="cap__sub">AI agents, voice, and workflow automation — engineered onto the stack you already run.</p>
+        </figure>
+        <figure class="cap" data-cap="2">
+          <h2 class="cap__title">Ready for<br><em>battle.</em></h2>
+          <p class="cap__sub">CloseBot SMS · GHL Voice AI · n8n workflows · HubSpot · fully A2P-compliant.</p>
+        </figure>
+        <figure class="cap" data-cap="3">
+          <h2 class="cap__title cap__title--glow">Your agency,<br><em>augmented.</em></h2>
+          <p class="cap__sub">Every lead answered in seconds. Every workflow running while you sleep.</p>
+          <a class="btn btn--glow" href="#contact">Book a call →</a>
+        </figure>
+      </div>
+
+      <div class="scroll-hint" id="scrollHint" aria-hidden="true">
+        <span>Scroll</span>
+        <span class="scroll-hint__line"></span>
+      </div>
+
+      <div class="stage__progress" aria-hidden="true"><i id="progressBar"></i></div>
+    </div>
+  </section>
+
+  <!-- ── PROOF STRIP ─────────────────────────────────────────────────── -->
+  <section class="marquee" aria-label="What we build">
+    <div class="marquee__row" id="marquee">
+      <span>CloseBot SMS Chatbots</span><span>•</span>
+      <span>GHL Voice AI &amp; Orb Widgets</span><span>•</span>
+      <span>n8n Workflow Automation</span><span>•</span>
+      <span>HubSpot Integrations</span><span>•</span>
+      <span>A2P 10DLC Compliance</span><span>•</span>
+      <span>Google &amp; Facebook Ads</span><span>•</span>
+    </div>
+  </section>
+
+  <!-- ── SERVICES ────────────────────────────────────────────────────── -->
+  <section class="section services" id="services">
+    <div class="section__head reveal">
+      <p class="eyebrow">What we build</p>
+      <h2 class="section__title">Weapons for the<br>modern agency.</h2>
+      <p class="section__lead">Six systems that turn manual grind into automated pipeline — delivered onto your existing tools, not a platform you have to migrate to.</p>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <span class="card__num">01</span>
+        <h3>CloseBot SMS Chatbots</h3>
+        <p>Conversational SMS agents that qualify, book, and nurture leads 24/7 — trained on your offer and handed off to humans at the right moment.</p>
+      </article>
+      <article class="card reveal">
+        <span class="card__num">02</span>
+        <h3>GHL Voice AI &amp; Orb</h3>
+        <p>GoHighLevel Voice AI agents and Orb widgets that answer calls, route intent, and capture every opportunity your team can't pick up.</p>
+      </article>
+      <article class="card reveal">
+        <span class="card__num">03</span>
+        <h3>n8n Workflow Automation</h3>
+        <p>Custom n8n pipelines that stitch your CRM, calendar, forms, and ads into one system that moves data — and money — on its own.</p>
+      </article>
+      <article class="card reveal">
+        <span class="card__num">04</span>
+        <h3>HubSpot Integrations</h3>
+        <p>Clean, two-way integrations that keep HubSpot in sync with everything else, so reporting is trustworthy and follow-up never slips.</p>
+      </article>
+      <article class="card reveal">
+        <span class="card__num">05</span>
+        <h3>A2P 10DLC Compliance</h3>
+        <p>Brand and campaign registration done right — so your SMS actually delivers and your sending stays inside carrier rules.</p>
+      </article>
+      <article class="card reveal">
+        <span class="card__num">06</span>
+        <h3>Google &amp; Facebook Ads</h3>
+        <p>Paid acquisition wired straight into your automation, so the leads you buy get worked instantly instead of sitting in a form.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ── APPROACH ────────────────────────────────────────────────────── -->
+  <section class="section approach" id="approach">
+    <div class="section__head reveal">
+      <p class="eyebrow">How we deliver</p>
+      <h2 class="section__title">The 3DX playbook.</h2>
+      <p class="section__lead">Every engagement runs the same disciplined path — from a roadmap you greenlight to a system you own.</p>
+    </div>
+    <ol class="steps">
+      <li class="step reveal"><span class="step__dot"></span><h3>Diagnose</h3><p>We map your funnel and write a 3DX roadmap. Nothing gets built until you greenlight it.</p></li>
+      <li class="step reveal"><span class="step__dot"></span><h3>Design</h3><p>Flows, prompts, and integrations designed against your stack and your compliance needs.</p></li>
+      <li class="step reveal"><span class="step__dot"></span><h3>Deploy</h3><p>We build, QA, and run UAT with you — then a live walkthrough and hands-on training for your team.</p></li>
+      <li class="step reveal"><span class="step__dot"></span><h3>Execute</h3><p>Full handover documentation, a monitoring window, and a clean close-out. You own the machine.</p></li>
+    </ol>
+  </section>
+
+  <!-- ── STATS ───────────────────────────────────────────────────────── -->
+  <section class="stats" aria-label="By the numbers">
+    <div class="stat reveal"><b data-count="24">24/7</b><span>Leads answered, day or night</span></div>
+    <div class="stat reveal"><b data-count="8">8+</b><span>US agency clients in Pod 2</span></div>
+    <div class="stat reveal"><b>&lt;60s</b><span>Typical speed-to-lead response</span></div>
+    <div class="stat reveal"><b>CAT</b><span>Built from Harare, shipping to the US</span></div>
+  </section>
+
+  <!-- ── ABOUT ───────────────────────────────────────────────────────── -->
+  <section class="section about" id="about">
+    <div class="about__grid">
+      <div class="reveal">
+        <p class="eyebrow">Who we are</p>
+        <h2 class="section__title">Zimbabwe-built.<br>Agency-tested.</h2>
+      </div>
+      <div class="about__body reveal">
+        <p>HireZim AI is a Zimbabwe-based automation studio delivering AI systems to US marketing agencies. We're not a SaaS you rent — we're the team that engineers automation directly into the tools you already run, then trains your people to command it.</p>
+        <p>Our operators work US hours from Harare, so your leads are covered while your competitors sleep. We ship in disciplined pods, keep humans in the loop where it matters, and hand over everything we build.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA / CONTACT ───────────────────────────────────────────────── -->
+  <section class="section cta" id="contact">
+    <div class="cta__inner reveal">
+      <p class="eyebrow">Ready?</p>
+      <h2 class="cta__title">Suit your agency<br>up for battle.</h2>
+      <p class="cta__sub">Tell us where the manual work is bleeding you. We'll come back with a 3DX roadmap and a fixed scope.</p>
+      <div class="cta__actions">
+        <a class="btn btn--glow" href="mailto:tinashe@hirezim.ai?subject=Let%27s%20automate%20my%20agency">Book a call →</a>
+        <a class="btn btn--ghost" href="mailto:tinashe@hirezim.ai">tinashe@hirezim.ai</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ──────────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer__brand">HIREZIM<span class="nav__ai">AI</span></div>
+    <p class="footer__tag">AI automation for marketing agencies · Harare, Zimbabwe (CAT)</p>
+    <p class="footer__copy">© <span id="year"></span> HireZim AI. Your agency, augmented.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1408" height="768" viewBox="0 0 1408 768">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="42%" r="75%">
+      <stop offset="0%" stop-color="#2c2a26"/>
+      <stop offset="100%" stop-color="#08070a"/>
+    </radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="5.8"/></filter>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.05"/></feComponentTransfer>
+      <feComposite operator="over" in2="SourceGraphic"/></filter>
+  </defs>
+  <rect width="1408" height="768" fill="url(#g)"/>
+  <rect width="1408" height="768" fill="url(#g)" filter="url(#grain)"/>
+  
+    
+    <path d="M 691.4,116.2 C 767.0,70.0 851.0,91.0 867.8,162.4 L 821.6,170.8 C 804.8,128.8 746.0,120.4 708.2,154.0 Z" fill="#3a3d7a" opacity="0.49"/>
+    <path d="M 704.0,175.0 C 830.0,175.0 855.2,301.0 855.2,406.0 C 855.2,490.0 830.0,565.6 813.2,616.0 L 788.0,616.0 L 788.0,456.4 C 788.0,427.0 767.0,414.4 737.6,414.4 L 687.2,414.4 L 687.2,494.2 L 620.0,494.2 L 620.0,414.4 C 569.6,410.2 552.8,343.0 552.8,301.0 C 552.8,217.0 620.0,175.0 704.0,175.0 Z" fill="none" stroke="#b8975a" stroke-width="6.720000000000001" opacity="0.9"/>
+    <path d="M 704.0,175.0 C 830.0,175.0 855.2,301.0 855.2,406.0 C 855.2,490.0 830.0,565.6 813.2,616.0 L 788.0,616.0 L 788.0,456.4 C 788.0,427.0 767.0,414.4 737.6,414.4 L 687.2,414.4 L 687.2,494.2 L 620.0,494.2 L 620.0,414.4 C 569.6,410.2 552.8,343.0 552.8,301.0 C 552.8,217.0 620.0,175.0 704.0,175.0 Z" fill="#000" opacity="0.18"/>
+    <circle cx="662" cy="351.4" r="10.5" fill="#1a1712"/>
+    <circle cx="708.2"  cy="351.4" r="10.5" fill="#1a1712"/>
+  <text x="704" y="698" text-anchor="middle" font-family="'Oswald','Arial Narrow',sans-serif"
+        font-size="34" letter-spacing="8" fill="#e9dcc4" opacity="0.85">03 — READY</text>
+  <text x="704" y="730" text-anchor="middle" font-family="Inter,Arial,sans-serif"
+        font-size="15" letter-spacing="3" fill="#9a8f7d" opacity="0.7">PLACEHOLDER · replace with frame-3.jpg</text>
+</svg>
