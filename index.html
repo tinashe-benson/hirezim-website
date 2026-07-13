@@ -3,192 +3,378 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>HireZim AI — Your agency, augmented.</title>
-  <meta name="description" content="HireZim AI builds SMS chatbots, GHL Voice AI, and n8n automation for US marketing agencies. We suit your team up for battle." />
-  <meta property="og:title" content="HireZim AI — Your agency, augmented." />
-  <meta property="og:description" content="AI automation for marketing agencies: CloseBot SMS, GHL Voice AI, n8n workflows, HubSpot integrations, A2P-compliant." />
-  <meta property="og:type" content="website" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <title>Argo — The AI Agent That Never Misses a Lead | HireZim AI</title>
+  <meta name="description" content="Argo is HireZim AI's flagship AI agent. It answers every call, text, and web chat in under 60 seconds, qualifies the lead, books the appointment, and follows up until they convert — 24/7, inside your GHL / HubSpot / n8n / CloseBot stack, fully A2P/10DLC compliant." />
+  <meta name="theme-color" content="#0A070E" />
+  <link rel="canonical" href="https://www.hirezim.ai/argo-agent" />
 
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.hirezim.ai/argo-agent" />
+  <meta property="og:title" content="Argo — The AI Agent That Never Misses a Lead" />
+  <meta property="og:description" content="Answers, qualifies, books, and follows up across voice, SMS & web chat — 24/7, inside the stack you already run. Book a live demo." />
+  <meta property="og:image" content="https://www.hirezim.ai/argo-agent/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Argo — The AI Agent That Never Misses a Lead" />
+  <meta name="twitter:description" content="An always-on AI agent for voice, SMS & web chat. Answers in under 60s, qualifies, books, follows up. Built by HireZim AI." />
+  <meta name="twitter:image" content="https://www.hirezim.ai/argo-agent/og-image.jpg" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
+  <link rel="preload" as="image" href="keyframes/frame-1.webp" type="image/webp" />
   <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Argo",
+    "brand": { "@type": "Brand", "name": "HireZim AI" },
+    "category": "AI Sales & Front-Desk Agent",
+    "description": "An always-on AI agent that answers, qualifies, books, and follows up with leads across voice, SMS and web chat — inside your existing GHL, HubSpot, n8n and CloseBot stack, A2P/10DLC compliant.",
+    "url": "https://www.hirezim.ai/argo-agent",
+    "manufacturer": { "@type": "Organization", "name": "HireZim AI", "url": "https://www.hirezim.ai" }
+  }
+  </script>
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
+
   <!-- ── NAV ─────────────────────────────────────────────────────────── -->
   <header class="nav" id="nav">
-    <a class="nav__brand" href="#top" aria-label="HireZim AI home">
-      <span class="nav__mark" aria-hidden="true"></span>
-      HIREZIM<span class="nav__ai">AI</span>
+    <a class="brand" href="#top" aria-label="HireZim AI — Argo home">
+      <svg class="brand__mark" viewBox="0 0 100 100" width="30" height="30" aria-hidden="true" focusable="false">
+        <g fill="none" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+          <polyline class="brand__chev brand__chev--top" points="26,49 50,26 74,49" />
+          <polyline class="brand__chev brand__chev--bot" points="26,73 50,50 74,73" />
+        </g>
+      </svg>
+      <span class="brand__word">Hire&nbsp;Zim <b>AI</b></span>
     </a>
-    <nav class="nav__links" aria-label="Primary">
-      <a href="#services">Services</a>
-      <a href="#approach">Approach</a>
-      <a href="#about">About</a>
-      <a class="nav__cta" href="#contact">Book a call</a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#integrations">Integrations</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn--primary btn--sm nav__cta" href="#book">Book a live demo</a>
     </nav>
-    <button class="nav__burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
       <span></span><span></span><span></span>
     </button>
   </header>
 
   <span id="top"></span>
 
-  <!-- ── SCROLL-KEYFRAME HERO ────────────────────────────────────────── -->
-  <!-- Tall scroll track; the .stage inside is pinned (sticky) while the
-       4 keyframes crossfade and the captions swap on scroll progress. -->
-  <section class="hero" id="hero" aria-label="Intro">
-    <div class="stage">
-      <div class="frames" id="frames">
-        <!-- De-watermarked warrior keyframes (no-helmet → purple-eyes). -->
-        <img class="frame" src="keyframes/frame-1.jpg" alt="A warrior kneeling in desert ruins, helmet resting on the ground beside him — unarmored." data-frame="1" fetchpriority="high" />
-        <img class="frame" src="keyframes/frame-2.jpg" alt="The warrior raising the plumed helmet, about to put it on." data-frame="2" />
-        <img class="frame" src="keyframes/frame-3.jpg" alt="The warrior in full bronze armor, helmet on, calm and ready." data-frame="3" />
-        <img class="frame" src="keyframes/frame-4.jpg" alt="Extreme close-up of the helmeted warrior with glowing purple eyes — menacing." data-frame="4" />
-        <div class="frames__vignette" aria-hidden="true"></div>
+  <main id="main">
+    <h1 class="visually-hidden">Argo — HireZim AI's AI agent for voice, SMS and web chat that never misses a lead</h1>
+
+    <!-- ── SCROLL-KEYFRAME HERO ──────────────────────────────────────── -->
+    <section class="hero" id="hero" aria-label="Meet Argo">
+      <div class="stage">
+        <div class="frames" id="frames">
+          <picture class="frame" data-frame="1">
+            <source srcset="keyframes/frame-1.webp" type="image/webp" />
+            <img src="keyframes/frame-1.jpg" alt="" decoding="async" fetchpriority="high" />
+          </picture>
+          <picture class="frame" data-frame="2">
+            <source srcset="keyframes/frame-2.webp" type="image/webp" />
+            <img src="keyframes/frame-2.jpg" alt="" decoding="async" />
+          </picture>
+          <picture class="frame" data-frame="3">
+            <source srcset="keyframes/frame-3.webp" type="image/webp" />
+            <img src="keyframes/frame-3.jpg" alt="" decoding="async" />
+          </picture>
+          <picture class="frame" data-frame="4">
+            <source srcset="keyframes/frame-4.webp" type="image/webp" />
+            <img src="keyframes/frame-4.jpg" alt="Argo — a helmeted warrior with glowing violet eyes." decoding="async" />
+          </picture>
+          <div class="frames__scrim" aria-hidden="true"></div>
+        </div>
+
+        <div class="caps" id="caps">
+          <figure class="cap" data-cap="0">
+            <p class="cap__kicker">Unarmored</p>
+            <p class="cap__title">Leads don't wait.<br>They <em>leave.</em></p>
+            <p class="cap__sub">The average business takes hours to follow up. Your buyer takes minutes to move on. Speed isn't an edge anymore — it's the whole game.</p>
+          </figure>
+          <figure class="cap" data-cap="1">
+            <p class="cap__kicker">Suit up</p>
+            <p class="cap__title">So arm your<br>front <em>line.</em></p>
+            <p class="cap__sub">Deploy Argo across voice, SMS, and web chat. The instant a lead lands — a call, a text, a form — Argo is already answering, in your voice.</p>
+          </figure>
+          <figure class="cap" data-cap="2">
+            <p class="cap__kicker">On the line</p>
+            <p class="cap__title">Answers every<br>lead. <em>24/7.</em></p>
+            <p class="cap__sub">Argo qualifies the lead, answers the hard questions, and books the meeting straight into your calendar — then follows up until they show.</p>
+          </figure>
+          <figure class="cap" data-cap="3">
+            <p class="cap__kicker">Meet Argo</p>
+            <p class="cap__title cap__title--glow">Augmented.<br><em>Unstoppable.</em></p>
+            <p class="cap__sub">Your always-on agent that turns every inbound into a booked call. Watch it answer, qualify, and close a live lead in real time.</p>
+            <a class="btn btn--primary" href="#book">Book a live demo →</a>
+          </figure>
+        </div>
+
+        <div class="scroll-hint" id="scrollHint" aria-hidden="true">
+          <span>Scroll</span><span class="scroll-hint__line"></span>
+        </div>
+        <div class="stage__progress" aria-hidden="true"><i id="progressBar"></i></div>
+      </div>
+    </section>
+
+    <!-- ── VALUE STRIP ───────────────────────────────────────────────── -->
+    <section class="band" id="value-strip">
+      <div class="band__inner reveal">
+        <p class="eyebrow">Meet Argo</p>
+        <h2 class="band__title">One agent. Every channel. <span class="mag">Nothing slips.</span></h2>
+        <p class="band__sub">Argo answers, qualifies, books, and follows up across voice, SMS &amp; web chat — inside your GHL / HubSpot / n8n / CloseBot stack, fully A2P/10DLC compliant.</p>
+        <a class="btn btn--primary" href="#book">Book a live demo →</a>
+      </div>
+    </section>
+
+    <!-- ── STAKES / SPEED-TO-LEAD ────────────────────────────────────── -->
+    <section class="section" id="stakes">
+      <div class="section__head reveal">
+        <p class="eyebrow">Speed-to-lead</p>
+        <h2 class="section__title">The first to reply<br>wins the <em>deal.</em></h2>
+        <p class="section__lead">It's rarely the best pitch that closes — it's the fastest hello. The moment a lead raises their hand, a clock starts. Argo makes sure the fastest reply is always yours.</p>
+      </div>
+      <div class="grid grid--3">
+        <article class="card reveal spot">
+          <h3>Seconds, not hours</h3>
+          <p>While your competitors' web forms sit in an inbox until Monday, Argo has already texted back, qualified the lead, and offered a time to talk.</p>
+        </article>
+        <article class="card reveal spot">
+          <h3>After-hours is where deals hide</h3>
+          <p>Most inquiries land when your team is off the clock. Argo works nights, weekends, and holidays — so a 2am lead wakes up already booked.</p>
+        </article>
+        <article class="card reveal spot">
+          <h3>Follow-up, finally handled</h3>
+          <p>Most leads need five or more touches; manual follow-up quietly stops at one or two. Argo keeps going — polite, persistent, on-brand — until they book or opt out.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── ARGO IN ACTION (chat demo) ────────────────────────────────── -->
+    <section class="section" id="in-action">
+      <div class="section__head reveal">
+        <p class="eyebrow">Argo in action</p>
+        <h2 class="section__title">Watch a cold text<br>become a <em>booked call.</em></h2>
+        <p class="section__lead">A real qualification flow — first message to confirmed appointment — in about the time it takes to read it. Proof, not just a promise.</p>
       </div>
 
-      <div class="caps" id="caps" aria-hidden="false">
-        <figure class="cap" data-cap="0">
-          <p class="cap__kicker">AI automation for marketing agencies</p>
-          <h1 class="cap__title">Your team,<br><em>unarmored.</em></h1>
-          <p class="cap__sub">Manual follow-ups. Leads gone cold overnight. A team buried in busywork that software should own.</p>
-        </figure>
-        <figure class="cap" data-cap="1">
-          <h2 class="cap__title">We suit<br>you <em>up.</em></h2>
-          <p class="cap__sub">AI agents, voice, and workflow automation — engineered onto the stack you already run.</p>
-        </figure>
-        <figure class="cap" data-cap="2">
-          <h2 class="cap__title">Ready for<br><em>battle.</em></h2>
-          <p class="cap__sub">CloseBot SMS · GHL Voice AI · n8n workflows · HubSpot · fully A2P-compliant.</p>
-        </figure>
-        <figure class="cap" data-cap="3">
-          <h2 class="cap__title cap__title--glow">Your agency,<br><em>augmented.</em></h2>
-          <p class="cap__sub">Every lead answered in seconds. Every workflow running while you sleep.</p>
-          <a class="btn btn--glow" href="#contact">Book a call →</a>
-        </figure>
+      <div class="demo reveal">
+        <div class="demo__device" id="argoChat" aria-label="Illustrative Argo conversation">
+          <div class="demo__bar">
+            <span class="demo__dot" aria-hidden="true"></span>
+            <span class="demo__title">Argo · Peak Remodeling Co.</span>
+            <span class="demo__status" id="chatStatus"><i class="demo__pulse" aria-hidden="true"></i> online</span>
+          </div>
+          <div class="demo__tabs" role="tablist" aria-label="Channel">
+            <button class="demo__tab is-on" data-ch="sms" role="tab" aria-selected="true">SMS</button>
+            <button class="demo__tab" data-ch="voice" role="tab" aria-selected="false">Voice</button>
+            <button class="demo__tab" data-ch="chat" role="tab" aria-selected="false">Web chat</button>
+          </div>
+          <div class="demo__log" id="chatLog" role="log" aria-live="off">
+            <div class="msg msg--lead"><p>Hey, saw your ad on Facebook — do you guys still do free estimates?</p></div>
+            <div class="msg msg--argo"><p>Hey! Yes we do 🙌 This is Argo with Peak Remodeling. I can get you on the schedule right now. What's the project — kitchen, bath, or something else?</p></div>
+            <div class="msg msg--lead"><p>Kitchen. The cabinets are basically falling apart lol</p></div>
+            <div class="msg msg--argo"><p>Ha, we can fix that fast. Are you thinking a full kitchen refresh, or mainly the cabinets for now?</p></div>
+            <div class="msg msg--lead"><p>Probably the full thing honestly</p></div>
+            <div class="msg msg--argo"><p>Nice — that's right in our wheelhouse. Quick one: is this for a home you own, or a rental?</p></div>
+            <div class="msg msg--lead"><p>We own it</p></div>
+            <div class="msg msg--argo"><p>Perfect, that means you qualify for our free in-home estimate. Roughly when are you hoping to start — next few weeks, or further out?</p></div>
+            <div class="msg msg--lead"><p>Next month if the price is right</p></div>
+            <div class="msg msg--argo"><p>Totally reasonable. I've got two spots for the on-site estimate: Thursday 2:00pm or Friday 10:30am. Which works better?</p></div>
+            <div class="msg msg--lead"><p>Thursday works</p></div>
+            <div class="msg msg--argo"><p>Done ✅ You're booked for Thursday at 2:00pm. I'll text a reminder the day before, and Marcus will reach out if anything changes.</p></div>
+            <div class="msg msg--lead"><p>Nope — honestly that was way easier than I expected 😅</p></div>
+            <div class="msg msg--argo"><p>That's the idea 😄 Talk Thursday — text me right here anytime.</p></div>
+          </div>
+          <div class="demo__foot">
+            <span class="demo__booked" id="chatBooked" hidden>Appointment booked ✓</span>
+            <span class="demo__timer" id="chatTimer">responded in 0.0s</span>
+          </div>
+        </div>
+        <p class="demo__caption">Illustrative conversation. Argo runs the same flow on your offer, your qualifying questions, and your calendar.</p>
       </div>
+    </section>
 
-      <div class="scroll-hint" id="scrollHint" aria-hidden="true">
-        <span>Scroll</span>
-        <span class="scroll-hint__line"></span>
+    <!-- ── CAPABILITIES ──────────────────────────────────────────────── -->
+    <section class="section band--alt" id="capabilities">
+      <div class="section__head reveal">
+        <p class="eyebrow">What Argo does</p>
+        <h2 class="section__title">One agent. The work<br>of a full <em>front desk.</em></h2>
+        <p class="section__lead">Argo isn't a widget you bolt on and forget. It owns the entire top of your funnel — the repetitive, time-sensitive work that decides whether a lead ever turns into revenue.</p>
       </div>
-
-      <div class="stage__progress" aria-hidden="true"><i id="progressBar"></i></div>
-    </div>
-  </section>
-
-  <!-- ── PROOF STRIP ─────────────────────────────────────────────────── -->
-  <section class="marquee" aria-label="What we build">
-    <div class="marquee__row" id="marquee">
-      <span>CloseBot SMS Chatbots</span><span>•</span>
-      <span>GHL Voice AI &amp; Orb Widgets</span><span>•</span>
-      <span>n8n Workflow Automation</span><span>•</span>
-      <span>HubSpot Integrations</span><span>•</span>
-      <span>A2P 10DLC Compliance</span><span>•</span>
-      <span>Google &amp; Facebook Ads</span><span>•</span>
-    </div>
-  </section>
-
-  <!-- ── SERVICES ────────────────────────────────────────────────────── -->
-  <section class="section services" id="services">
-    <div class="section__head reveal">
-      <p class="eyebrow">What we build</p>
-      <h2 class="section__title">Weapons for the<br>modern agency.</h2>
-      <p class="section__lead">Six systems that turn manual grind into automated pipeline — delivered onto your existing tools, not a platform you have to migrate to.</p>
-    </div>
-    <div class="cards">
-      <article class="card reveal">
-        <span class="card__num">01</span>
-        <h3>CloseBot SMS Chatbots</h3>
-        <p>Conversational SMS agents that qualify, book, and nurture leads 24/7 — trained on your offer and handed off to humans at the right moment.</p>
-      </article>
-      <article class="card reveal">
-        <span class="card__num">02</span>
-        <h3>GHL Voice AI &amp; Orb</h3>
-        <p>GoHighLevel Voice AI agents and Orb widgets that answer calls, route intent, and capture every opportunity your team can't pick up.</p>
-      </article>
-      <article class="card reveal">
-        <span class="card__num">03</span>
-        <h3>n8n Workflow Automation</h3>
-        <p>Custom n8n pipelines that stitch your CRM, calendar, forms, and ads into one system that moves data — and money — on its own.</p>
-      </article>
-      <article class="card reveal">
-        <span class="card__num">04</span>
-        <h3>HubSpot Integrations</h3>
-        <p>Clean, two-way integrations that keep HubSpot in sync with everything else, so reporting is trustworthy and follow-up never slips.</p>
-      </article>
-      <article class="card reveal">
-        <span class="card__num">05</span>
-        <h3>A2P 10DLC Compliance</h3>
-        <p>Brand and campaign registration done right — so your SMS actually delivers and your sending stays inside carrier rules.</p>
-      </article>
-      <article class="card reveal">
-        <span class="card__num">06</span>
-        <h3>Google &amp; Facebook Ads</h3>
-        <p>Paid acquisition wired straight into your automation, so the leads you buy get worked instantly instead of sitting in a form.</p>
-      </article>
-    </div>
-  </section>
-
-  <!-- ── APPROACH ────────────────────────────────────────────────────── -->
-  <section class="section approach" id="approach">
-    <div class="section__head reveal">
-      <p class="eyebrow">How we deliver</p>
-      <h2 class="section__title">The 3DX playbook.</h2>
-      <p class="section__lead">Every engagement runs the same disciplined path — from a roadmap you greenlight to a system you own.</p>
-    </div>
-    <ol class="steps">
-      <li class="step reveal"><span class="step__dot"></span><h3>Diagnose</h3><p>We map your funnel and write a 3DX roadmap. Nothing gets built until you greenlight it.</p></li>
-      <li class="step reveal"><span class="step__dot"></span><h3>Design</h3><p>Flows, prompts, and integrations designed against your stack and your compliance needs.</p></li>
-      <li class="step reveal"><span class="step__dot"></span><h3>Deploy</h3><p>We build, QA, and run UAT with you — then a live walkthrough and hands-on training for your team.</p></li>
-      <li class="step reveal"><span class="step__dot"></span><h3>Execute</h3><p>Full handover documentation, a monitoring window, and a clean close-out. You own the machine.</p></li>
-    </ol>
-  </section>
-
-  <!-- ── STATS ───────────────────────────────────────────────────────── -->
-  <section class="stats" aria-label="By the numbers">
-    <div class="stat reveal"><b data-count="24">24/7</b><span>Leads answered, day or night</span></div>
-    <div class="stat reveal"><b data-count="8">8+</b><span>US agency clients in Pod 2</span></div>
-    <div class="stat reveal"><b>&lt;60s</b><span>Typical speed-to-lead response</span></div>
-    <div class="stat reveal"><b>CAT</b><span>Built from Harare, shipping to the US</span></div>
-  </section>
-
-  <!-- ── ABOUT ───────────────────────────────────────────────────────── -->
-  <section class="section about" id="about">
-    <div class="about__grid">
-      <div class="reveal">
-        <p class="eyebrow">Who we are</p>
-        <h2 class="section__title">Zimbabwe-built.<br>Agency-tested.</h2>
+      <div class="grid grid--3">
+        <article class="card reveal spot"><span class="card__num">01</span><h3>Answers in under 60 seconds</h3><p>Replies to every new lead around the clock, no human in the loop, while intent is still hot.</p></article>
+        <article class="card reveal spot"><span class="card__num">02</span><h3>Voice, SMS &amp; web chat</h3><p>One agent across the phone line, the text thread, and the website widget — one memory carrying context between all three.</p></article>
+        <article class="card reveal spot"><span class="card__num">03</span><h3>Qualifies every lead</h3><p>Asks your questions, scores fit, and pushes hot leads to the front of the line — no manual triage.</p></article>
+        <article class="card reveal spot"><span class="card__num">04</span><h3>Books the meeting</h3><p>Offers real open slots and drops confirmed appointments straight into your calendar, with reminders attached.</p></article>
+        <article class="card reveal spot"><span class="card__num">05</span><h3>Follows up relentlessly</h3><p>No-shows and no-replies get chased automatically across days and channels until they rebook or opt out.</p></article>
+        <article class="card reveal spot"><span class="card__num">06</span><h3>Lives in your stack</h3><p>Runs inside GHL, HubSpot, n8n, and CloseBot — and stays A2P/10DLC compliant by default. Nothing to rip out.</p></article>
       </div>
-      <div class="about__body reveal">
-        <p>HireZim AI is a Zimbabwe-based automation studio delivering AI systems to US marketing agencies. We're not a SaaS you rent — we're the team that engineers automation directly into the tools you already run, then trains your people to command it.</p>
-        <p>Our operators work US hours from Harare, so your leads are covered while your competitors sleep. We ship in disciplined pods, keep humans in the loop where it matters, and hand over everything we build.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ── CTA / CONTACT ───────────────────────────────────────────────── -->
-  <section class="section cta" id="contact">
-    <div class="cta__inner reveal">
-      <p class="eyebrow">Ready?</p>
-      <h2 class="cta__title">Suit your agency<br>up for battle.</h2>
-      <p class="cta__sub">Tell us where the manual work is bleeding you. We'll come back with a 3DX roadmap and a fixed scope.</p>
-      <div class="cta__actions">
-        <a class="btn btn--glow" href="mailto:tinashe@hirezim.ai?subject=Let%27s%20automate%20my%20agency">Book a call →</a>
-        <a class="btn btn--ghost" href="mailto:tinashe@hirezim.ai">tinashe@hirezim.ai</a>
+    <!-- ── HOW IT WORKS ──────────────────────────────────────────────── -->
+    <section class="section" id="how-it-works">
+      <div class="section__head reveal">
+        <p class="eyebrow">How Argo works</p>
+        <h2 class="section__title">Live in days.<br>Answering in <em>seconds.</em></h2>
+        <p class="section__lead">Argo isn't another dashboard for your team to babysit. HireZim builds it around your business, drops it into your stack, and it goes to work.</p>
       </div>
-    </div>
-  </section>
+      <ol class="steps">
+        <li class="step reveal"><span class="step__dot"></span><h3>Connect your stack</h3><p>We wire Argo into your CRM, calendar, and phone/SMS — GHL, HubSpot, n8n, CloseBot. No rebuild, no new logins for your team.</p></li>
+        <li class="step reveal"><span class="step__dot"></span><h3>Train it on your business</h3><p>Argo learns your services, offers, qualifying questions, tone, and booking rules — so it sounds like your best rep on their best day.</p></li>
+        <li class="step reveal"><span class="step__dot"></span><h3>Go live across channels</h3><p>Flip it on. Every new call, text, and form gets an instant, on-brand, A2P-compliant response from minute one.</p></li>
+        <li class="step reveal"><span class="step__dot"></span><h3>Watch the pipeline fill</h3><p>Every conversation, qualification, and booking is logged to your CRM in real time — so you see exactly what Argo produces.</p></li>
+      </ol>
+    </section>
 
-  <!-- ── FOOTER ──────────────────────────────────────────────────────── -->
+    <!-- ── INTEGRATIONS ──────────────────────────────────────────────── -->
+    <section class="section band--alt" id="integrations">
+      <div class="section__head reveal">
+        <p class="eyebrow">Fits your stack</p>
+        <h2 class="section__title">Works inside the tools<br>you <em>already run.</em></h2>
+        <p class="section__lead">No migration, no new dashboard to babysit. Argo lives where your leads and your team already are — and HireZim handles the wiring.</p>
+      </div>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__row" id="intMarquee">
+          <span>GoHighLevel</span><span>·</span><span>HubSpot</span><span>·</span><span>n8n</span><span>·</span><span>CloseBot</span><span>·</span><span>Twilio / A2P 10DLC</span><span>·</span><span>Google &amp; Outlook Calendar</span><span>·</span>
+        </div>
+      </div>
+      <div class="grid grid--3">
+        <article class="card reveal spot"><h3>GoHighLevel</h3><p>Two-way sync with contacts, pipelines, and calendars — and powers the Orb voice widget. Every touch logged.</p></article>
+        <article class="card reveal spot"><h3>HubSpot</h3><p>Pushes qualified leads into your workflows and keeps every conversation on the timeline, moving deal stages automatically.</p></article>
+        <article class="card reveal spot"><h3>n8n</h3><p>Fires any downstream automation the moment Argo qualifies or books a lead — no glue code from you.</p></article>
+        <article class="card reveal spot"><h3>CloseBot</h3><p>Layers Argo's conversation logic onto your existing SMS qualification flows, end to end.</p></article>
+        <article class="card reveal spot"><h3>Your calendar</h3><p>Google, Outlook, or GHL — real availability in, real bookings out, with zero double-booking.</p></article>
+        <article class="card reveal spot"><h3>A2P 10DLC</h3><p>Registered, compliant messaging baked in from day one — not bolted on later.</p></article>
+      </div>
+    </section>
+
+    <!-- ── WHY ARGO ──────────────────────────────────────────────────── -->
+    <section class="section" id="why-argo">
+      <div class="section__head reveal">
+        <p class="eyebrow">Why Argo</p>
+        <h2 class="section__title">Not a chatbot.<br>A closer that <em>never sleeps.</em></h2>
+        <p class="section__lead">The Argo carried an elite crew on a relentless quest and didn't turn back until the mission was done. Anyone can staple an autoresponder onto a form — Argo runs the whole conversation to a booked outcome.</p>
+      </div>
+      <div class="grid grid--2">
+        <article class="card reveal spot"><h3>Sounds human, not scripted</h3><p>Natural, on-brand conversation that reads like your best rep — not a clunky "press 1" decision tree. It handles curveballs and keeps it human.</p></article>
+        <article class="card reveal spot"><h3>Omnichannel, one brain</h3><p>Voice, SMS, and chat share a single memory. A caller who texts later picks up right where they left off — leads never repeat themselves.</p></article>
+        <article class="card reveal spot"><h3>Always on, never tired</h3><p>No shifts, no sick days, no Monday backlog. It follows up on lead #1 and lead #500 with the same energy.</p></article>
+        <article class="card reveal spot"><h3>Done-for-you by HireZim</h3><p>We don't hand you software and wish you luck. We build, train, launch, and tune Argo around your business — you get results, not homework.</p></article>
+      </div>
+    </section>
+
+    <!-- ── COMPLIANCE ────────────────────────────────────────────────── -->
+    <section class="section band--alt" id="compliance">
+      <div class="section__head reveal">
+        <p class="eyebrow">Trust &amp; compliance</p>
+        <h2 class="section__title">Fast, but <em>by the book.</em></h2>
+        <p class="section__lead">Aggressive follow-up only works if it's compliant. Argo is built for the rules US messaging actually runs on — compliance is core to what HireZim does.</p>
+      </div>
+      <div class="grid grid--2">
+        <article class="card reveal spot"><h3>A2P 10DLC registered</h3><p>Every SMS number properly registered and branded — no gray-area blasting.</p></article>
+        <article class="card reveal spot"><h3>Consent &amp; opt-out honored</h3><p>STOP is respected instantly and logged, and Argo only messages leads who opted in.</p></article>
+        <article class="card reveal spot"><h3>Human in the loop</h3><p>You set the guardrails; Argo escalates anything outside them to your team with full context attached.</p></article>
+        <article class="card card--todo reveal"><span class="todo">Client to confirm</span><h3>Your data, your rules</h3><p>Conversations stay inside your systems. Add your data-handling / security note here.</p></article>
+      </div>
+    </section>
+
+    <!-- ── PROOF (placeholders) ──────────────────────────────────────── -->
+    <section class="section" id="proof">
+      <div class="section__head reveal">
+        <p class="eyebrow">Proof</p>
+        <h2 class="section__title">The results do<br>the <em>talking.</em></h2>
+        <p class="section__lead">Real numbers and real words from real clients go here — we don't invent them. Drop these in once approved for public use.</p>
+      </div>
+      <div class="grid grid--3">
+        <article class="card card--todo reveal"><span class="todo">Add logos</span><h3>Client logo wall</h3><p>4–6 approved client logos once cleared for public use.</p></article>
+        <article class="card card--todo reveal"><span class="todo">Add metric</span><h3>Headline number</h3><p>One hero stat, e.g. "Booked calls up X% in the first 30 days."</p></article>
+        <article class="card card--todo reveal"><span class="todo">Add quote</span><h3>Client testimonial</h3><p>A one- to two-sentence quote with name, title, and company.</p></article>
+      </div>
+    </section>
+
+    <!-- ── FAQ ───────────────────────────────────────────────────────── -->
+    <section class="section band--alt" id="faq">
+      <div class="section__head reveal">
+        <p class="eyebrow">Questions</p>
+        <h2 class="section__title">Everything you're<br>about to <em>ask.</em></h2>
+        <p class="section__lead">Straight answers on setup, tone, your stack, compliance, and handoff. Still unsure? Book a demo and we'll run Argo on your actual funnel.</p>
+      </div>
+      <div class="faq" id="faq-list">
+        <div class="faq__item reveal">
+          <button class="faq__q" aria-expanded="false"><span>How fast can Argo actually go live?</span><i class="faq__pm" aria-hidden="true"></i></button>
+          <div class="faq__a"><p>Most setups are live within days, not months. Because Argo plugs into the stack you already run — GHL, HubSpot, n8n, CloseBot, your calendar — there's nothing to rip out and rebuild. We connect it, train it on your services and qualifying questions, run it past you, and flip it on. You'll see the exact timeline for your setup on the demo call.</p></div>
+        </div>
+        <div class="faq__item reveal">
+          <button class="faq__q" aria-expanded="false"><span>Will my leads know it's a bot? Does it sound robotic?</span><i class="faq__pm" aria-hidden="true"></i></button>
+          <div class="faq__a"><p>Argo is built to sound like your best rep on their best day — natural, warm, and on-brand, not a rigid "press 1" tree. It reads context, handles curveball questions, and keeps the conversation human. On the demo we'll show you a live thread so you can judge the tone yourself, and we stay transparent wherever disclosure is required.</p></div>
+        </div>
+        <div class="faq__item reveal">
+          <button class="faq__q" aria-expanded="false"><span>Does Argo work with my CRM and phone system?</span><i class="faq__pm" aria-hidden="true"></i></button>
+          <div class="faq__a"><p>Yes. Argo is designed to live inside your existing tools rather than replace them. It integrates with GoHighLevel, HubSpot, n8n, and CloseBot, syncs with Google, Outlook, and GHL calendars, and keeps your existing phone numbers — contacts, pipelines, and bookings sync both ways.</p></div>
+        </div>
+        <div class="faq__item reveal">
+          <button class="faq__q" aria-expanded="false"><span>Is the texting compliant? What about A2P / 10DLC?</span><i class="faq__pm" aria-hidden="true"></i></button>
+          <div class="faq__a"><p>Compliance is built in, not bolted on. Argo runs on properly registered A2P 10DLC messaging with opt-out handling and consent tracking baked into every conversation — STOP is honored instantly and logged. This is core to what HireZim does: we handle registration and keep your messaging compliant as you scale.</p></div>
+        </div>
+        <div class="faq__item reveal">
+          <button class="faq__q" aria-expanded="false"><span>What happens when a lead needs a real person?</span><i class="faq__pm" aria-hidden="true"></i></button>
+          <div class="faq__a"><p>Argo hands off cleanly the moment a lead asks for a human — or the moment it hits a limit you've defined. It routes the conversation, with full context attached, to the right person on your team, so nobody starts from scratch. You decide exactly where Argo stops and your reps take over.</p></div>
+        </div>
+        <div class="faq__item reveal">
+          <button class="faq__q" aria-expanded="false"><span>How does pricing work?</span><i class="faq__pm" aria-hidden="true"></i></button>
+          <div class="faq__a"><p>Pricing is scoped to your setup — your channels, your volume, and how much of the funnel you want Argo to own — rather than a per-seat fee. You're paying for an agent that books calls, typically a fraction of a single SDR salary while covering the pipeline 24/7. We'll walk you through the numbers on the demo.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FINAL CTA ─────────────────────────────────────────────────── -->
+    <section class="section cta" id="book">
+      <div class="cta__inner reveal">
+        <p class="eyebrow">Put Argo on the front line</p>
+        <h2 class="cta__title">Send Argo your<br>next <em>lead.</em></h2>
+        <p class="cta__sub">Book a 20-minute demo and watch Argo answer, qualify, and book a test lead in real time. No long-term lock-in — setup is handled for you.</p>
+
+        <form class="cta__form spot" id="demoForm">
+          <div class="cta__row">
+            <input type="text" name="name" placeholder="Your name" required autocomplete="name" />
+            <input type="text" name="company" placeholder="Company / agency" autocomplete="organization" />
+          </div>
+          <input type="email" name="email" placeholder="Work email" required autocomplete="email" />
+          <textarea name="message" rows="3" placeholder="Where is manual work bleeding you right now?"></textarea>
+          <button class="btn btn--primary btn--block" type="submit">Book a live demo →</button>
+          <p class="cta__alt">Prefer email? <a href="mailto:tinashe@hirezim.ai?subject=Argo%20demo%20request">tinashe@hirezim.ai</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── FOOTER ────────────────────────────────────────────────────── -->
   <footer class="footer">
-    <div class="footer__brand">HIREZIM<span class="nav__ai">AI</span></div>
-    <p class="footer__tag">AI automation for marketing agencies · Harare, Zimbabwe (CAT)</p>
-    <p class="footer__copy">© <span id="year"></span> HireZim AI. Your agency, augmented.</p>
+    <a class="brand" href="#top" aria-label="HireZim AI home">
+      <svg class="brand__mark" viewBox="0 0 100 100" width="28" height="28" aria-hidden="true" focusable="false">
+        <g fill="none" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+          <polyline class="brand__chev brand__chev--top" points="26,49 50,26 74,49" />
+          <polyline class="brand__chev brand__chev--bot" points="26,73 50,50 74,73" />
+        </g>
+      </svg>
+      <span class="brand__word">Hire&nbsp;Zim <b>AI</b></span>
+    </a>
+    <p class="footer__tag">Argo — the AI agent that never misses a lead. Built by HireZim AI.</p>
+    <p class="footer__copy">© <span id="year"></span> HireZim AI. All rights reserved.</p>
   </footer>
+
+  <!-- ── STICKY MOBILE CTA ─────────────────────────────────────────── -->
+  <a class="sticky-cta" id="stickyCta" href="#book">Book a live demo →</a>
 
   <script src="app.js"></script>
 </body>
