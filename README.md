@@ -1,49 +1,49 @@
-# Argo — HireZim AI · product landing page
+# Argo Agent — Hire Zim AI
 
-A conversion-focused product page for **Argo**, HireZim AI's flagship AI agent
-(voice + SMS + web chat: answers, qualifies, books, follows up — 24/7, inside
-the client's existing GHL / HubSpot / n8n / CloseBot stack, A2P/10DLC compliant).
+A recreation of **hirezim.ai/argo-agent**: Argo is a **governed AI agent for
+founders** — "leverage without losing control" — built around your business
+context, tools, workflows, voice, approvals, and operating standards. Runs on
+**FounderOS™** and the **G.A.M.E.™** governance framework.
 
-Pure static site — no build, no dependencies. Vercel serves it at the repo root
-(zero config via `vercel.json`).
+Static site, no build, no deps. Vercel serves it at the repo root (`vercel.json`).
 
-## Signature interactions
+## The build
 
-- **Scroll cinematic** — a 500vh pinned hero where a Spartan warrior crossfades
-  across 4 keyframes (unarmored → suit up → ready → glowing-eyed close-up) while
-  the headline story tracks scroll. Violet eye-glow lands on "Unstoppable".
-- **Argo in action** — a self-playing chat demo: an inbound SMS lead is
-  qualified and booked, with typing indicator, live latency timer, and an
-  "Appointment booked ✓" chip. Loops on scroll-into-view; static transcript
-  without JS / under reduced-motion.
-- Pointer spotlight on cards, sticky mobile CTA, FAQ accordion, accessible
-  mobile menu, scroll reveals.
+A hybrid of the real page's content/brand and an interactive hero:
+
+- **Dark cinematic scroll hero** — a 500vh pinned Spartan keyframe sequence
+  (unarmored → suits up → ready → glowing-eyed close-up) carrying the narrative
+  *"Everyone will have an AI agent → You are not everyone → your AI can't be
+  either → Leverage without losing control."*
+- **Light product page** in the real brand (purple→magenta gradient, bold black
+  display type, soft cards): the **Argo governance diagram** (tools → Argo →
+  governed outputs, ringed by Guardrails/Permissions/Approvals/Risk Management),
+  **You Are Not Everyone**, **Tier 1 use cases**, **This Is Just Tier 1**,
+  **FounderOS™**, **G.A.M.E.™** framework, **FAQ**, related guides, final CTA,
+  and the full footer.
+
+All copy is transcribed from the live page. Fonts: Plus Jakarta Sans + Inter.
 
 ## Structure
 
 ```
-index.html      # full Argo page (nav → hero → value → speed-to-lead → chat demo →
-                #   capabilities → how-it-works → integrations → why → compliance →
-                #   proof → FAQ → book), SEO/OG/JSON-LD, a11y baked in
-styles.css      # magenta (#FF2D8E) + near-black brand; violet reserved for the
-                #   eye-glow payoff. Oswald / Inter / IBM Plex Mono. Responsive + reduced-motion.
-app.js          # scroll engine, chat demo, spotlight, sticky CTA, accordion, menu
-favicon.svg     # double-chevron mark
-og-image.jpg    # 1200×630 social card (built from frame-4)
-keyframes/      # frame-1..4 .jpg + .webp (de-watermarked); originals/ = raw sources
-tools/          # remove-watermark.py, gen-placeholders.mjs
+index.html   # full Argo page (dark hero → light body), SEO/OG/JSON-LD, a11y
+styles.css   # light brand system + dark hero; responsive + reduced-motion
+app.js       # scroll hero engine, nav, reveals (incl. SVG diagram draw), FAQ, sticky CTA
+favicon.svg  # double-chevron mark
+og-image.jpg # 1200×630 social card
+keyframes/   # frame-1..4 .jpg + .webp (de-watermarked); originals/ = raw sources
+tools/       # remove-watermark.py, gen-placeholders.mjs
 ```
 
-## Fill-in before launch (kept honest — nothing fabricated)
+## Fill-in before launch
 
-- **Booking**: the "Book a live demo" CTAs point to `#book`; the form currently
-  falls back to a `mailto:`. Wire it to your real scheduler (Calendly / GHL) and
-  automation endpoint.
-- **Proof / compliance placeholders**: the dashed "Add …" cards mark where real
-  client logos, a headline metric, a testimonial, and your data-handling note go.
-- **Copy**: content is a strong inference of the Argo product (the live
-  `/argo-agent` page couldn't be fetched from the build environment). Paste the
-  real copy and it swaps straight in.
+- **Real links** for the CTAs ("Schedule / Book a Strategy Call", "Download the
+  Argo Playbook", "Explore the Platform", "Read the book", the guides, and
+  footer links) — currently point to `#contact` / `mailto:`. Wire to your
+  scheduler + real URLs.
+- **Tool logos** (OpenClaw / HERMES-AGENT / NemoClaw) render as text chips in the
+  diagram — swap for real SVG logos if desired.
 
 ## Run locally
 
