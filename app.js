@@ -7,8 +7,9 @@
 (() => {
   "use strict";
 
-  /* ── To use the real de-watermarked images, drop frame-1.jpg … frame-4.jpg
-     into /keyframes and set USE_REAL = true (order = no-helmet → purple-eyes). */
+  /* The real de-watermarked frames (frame-1..4.jpg, no-helmet → purple-eyes)
+     are wired directly in index.html. Flip USE_REAL to re-point <img> src at
+     runtime if you rename them (EXT controls the extension). */
   const USE_REAL = false;
   const EXT = "jpg";
 

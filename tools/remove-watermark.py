@@ -46,6 +46,7 @@ def main() -> int:
     ap.add_argument("--radius", type=int, default=8, help="inpaint radius in px")
     ap.add_argument("--pad", type=int, default=6, help="mask dilation padding in px")
     ap.add_argument("--quality", type=int, default=92, help="output JPEG quality")
+    ap.add_argument("--blur", type=int, default=45, help="bokeh blur kernel over the fill (0=off)")
     ap.add_argument("--src", default=ORIGINALS, help="folder of raw images (sorted = story order)")
     ap.add_argument("--debug", action="store_true", help="write *_mask.png previews, no frames")
     args = ap.parse_args()
@@ -99,6 +100,17 @@ def main() -> int:
         # Two-pass inpaint (Telea then Navier–Stokes) for a cleaner corner fill.
         step1 = cv2.inpaint(img, mask, args.radius, cv2.INPAINT_TELEA)
         clean = cv2.inpaint(step1, mask, max(3, args.radius // 2), cv2.INPAINT_NS)
+
+        # Inpainting streaks on smooth/bokeh backgrounds. Blend a bokeh-style
+        # blur of the fill back in through a feathered mask so the patch matches
+        # the out-of-focus corner instead of showing horizontal smears.
+        if args.blur > 0:
+            b = args.blur | 1  # odd kernel
+            blurred = cv2.GaussianBlur(clean, (b, b), 0)
+            feather = cv2.dilate(mask, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (b, b)))
+            alpha = cv2.GaussianBlur(feather, (b, b), 0).astype(np.float32) / 255.0
+            alpha = alpha[:, :, None]
+            clean = (clean * (1.0 - alpha) + blurred * alpha).astype(np.uint8)
 
         out = os.path.join(KEYFRAMES, f"frame-{idx}.jpg")
         cv2.imwrite(out, clean, [cv2.IMWRITE_JPEG_QUALITY, args.quality])
