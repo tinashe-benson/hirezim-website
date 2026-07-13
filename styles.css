@@ -109,14 +109,17 @@ img, svg, picture { display: block; max-width: 100%; }
 .product__grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: clamp(30px,5vw,64px); align-items: center; }
 .product__copy .btn { margin-top: 28px; }
 .product__copy .h-xl { margin-top: 6px; }
-.diagram { background: var(--surface); border: 1px solid var(--line); border-radius: 22px; padding: 20px; box-shadow: 0 30px 70px -40px rgba(90,40,150,.35); }
+.diagram { background: var(--surface); border: 1px solid var(--line); border-radius: 22px; padding: 22px; box-shadow: 0 30px 70px -40px rgba(90,40,150,.3); }
 .diagram__svg { width: 100%; height: auto; }
-.dg-tool rect, .dg-out rect { fill: #fff; stroke: var(--line-2); }
-.dg-tool text, .dg-out text { font-family: var(--body); font-size: 15px; font-weight: 500; fill: var(--ink-2); }
-.dg-center-t { font-family: var(--display); font-weight: 700; font-size: 19px; fill: #fff; }
-.dg-ring-label { font-family: var(--display); font-weight: 600; font-size: 13px; letter-spacing: .5px; fill: var(--ink-3); text-transform: uppercase; }
-.dg-center rect { filter: drop-shadow(0 12px 26px rgba(168,40,180,.45)); }
-.diagram.is-in .dg-center { animation: floaty 4s ease-in-out infinite; transform-origin: 500px 310px; }
+.dg-node rect, .dg-out rect { fill: #fff; stroke: var(--line-2); }
+.dg-node text, .dg-out text { font-family: var(--body); font-size: 15px; font-weight: 600; fill: var(--ink-2); }
+.dg-argo-name { font-family: var(--display); font-weight: 700; font-size: 20px; fill: var(--ink); }
+.dg-ring-label { font-family: var(--body); font-weight: 500; font-size: 13.5px; fill: var(--ink-3); }
+.dg-shield { fill: rgba(111,168,58,.06); stroke: #9DC96A; stroke-width: 2; }
+.dg-tick line { stroke: #6FA83A; stroke-width: 3; stroke-linecap: round; }
+.dg-wires { stroke: #9DC96A; }
+.dg-center rect { filter: drop-shadow(0 14px 30px rgba(90,40,150,.28)); }
+.diagram.is-in .dg-center { animation: floaty 4.5s ease-in-out infinite; transform-origin: 500px 300px; }
 @keyframes floaty { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
 .cx { stroke-dasharray: 1; stroke-dashoffset: 1; }
 .diagram.is-in .cx { animation: draw 1.2s var(--ease) forwards; }

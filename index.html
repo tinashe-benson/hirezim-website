@@ -116,60 +116,62 @@
           <a class="btn btn--grad" href="#contact">Book an Argo Strategy Call</a>
         </div>
 
-        <div class="diagram reveal" id="diagram" aria-label="How Argo is governed: connected tools and guardrails produce governed business outputs">
+        <div class="diagram reveal" id="diagram" aria-label="How Argo is governed: connected tools flow through Argo's guardrails, permissions, approvals and risk management to produce governed business outputs">
           <svg class="diagram__svg" viewBox="0 0 1000 620" role="img">
             <defs>
-              <linearGradient id="gnode" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#9333EA"/><stop offset="100%" stop-color="#D6249E"/>
-              </linearGradient>
+              <clipPath id="argoClip"><circle cx="500" cy="272" r="52"/></clipPath>
             </defs>
-            <!-- connectors (tools → argo) -->
-            <g class="dg-lines" fill="none" stroke="#D9CEEA" stroke-width="2">
-              <path class="cx" pathLength="1" d="M235 130 C 340 150, 360 250, 415 285"/>
-              <path class="cx" pathLength="1" d="M235 310 C 320 310, 350 310, 415 310"/>
-              <path class="cx" pathLength="1" d="M235 490 C 340 470, 360 370, 415 335"/>
-              <!-- argo → outputs -->
-              <path class="cx" pathLength="1" d="M585 290 C 660 250, 700 150, 780 140"/>
-              <path class="cx" pathLength="1" d="M590 300 C 680 290, 700 235, 780 225"/>
-              <path class="cx" pathLength="1" d="M590 310 C 690 310, 700 310, 780 310"/>
-              <path class="cx" pathLength="1" d="M590 320 C 680 330, 700 385, 780 395"/>
-              <path class="cx" pathLength="1" d="M585 330 C 660 370, 700 470, 780 480"/>
+
+            <!-- connectors -->
+            <g class="dg-wires" fill="none" stroke-width="2">
+              <path class="cx" pathLength="1" d="M250 139 C 312 150, 342 235, 393 258"/>
+              <path class="cx" pathLength="1" d="M250 310 C 320 305, 350 302, 393 302"/>
+              <path class="cx" pathLength="1" d="M250 481 C 312 470, 342 368, 393 346"/>
+              <path class="cx" pathLength="1" d="M607 258 C 672 235, 700 140, 760 122"/>
+              <path class="cx" pathLength="1" d="M607 282 C 682 258, 700 214, 760 207"/>
+              <path class="cx" pathLength="1" d="M607 302 C 690 300, 700 292, 760 292"/>
+              <path class="cx" pathLength="1" d="M607 322 C 682 345, 700 372, 760 377"/>
+              <path class="cx" pathLength="1" d="M607 346 C 672 366, 700 456, 760 462"/>
             </g>
 
-            <!-- guardrail shield ring -->
-            <ellipse class="dg-ring" cx="500" cy="310" rx="150" ry="175" fill="rgba(147,51,234,0.04)" stroke="#B98BEA" stroke-width="1.5" stroke-dasharray="5 6"/>
-            <text class="dg-ring-label" x="500" y="150" text-anchor="middle">Guardrails</text>
-            <text class="dg-ring-label" x="372" y="314" text-anchor="middle">Permissions</text>
-            <text class="dg-ring-label" x="628" y="314" text-anchor="middle">Approvals</text>
-            <text class="dg-ring-label" x="500" y="478" text-anchor="middle">Risk Management</text>
+            <!-- guardrail shield -->
+            <path class="dg-shield" d="M500 152 C 616 152, 648 176, 648 262 C 648 360, 598 432, 500 470 C 402 432, 352 360, 352 262 C 352 176, 384 152, 500 152 Z"/>
+            <g class="dg-tick"><line x1="470" y1="176" x2="530" y2="176"/><line x1="372" y1="286" x2="392" y2="286"/><line x1="608" y1="286" x2="628" y2="286"/><line x1="462" y1="446" x2="538" y2="446"/></g>
+            <text class="dg-ring-label" x="500" y="200" text-anchor="middle">Guardrails</text>
+            <text class="dg-ring-label" x="336" y="290" text-anchor="middle">Permissions</text>
+            <text class="dg-ring-label" x="664" y="290" text-anchor="middle">Approvals</text>
+            <text class="dg-ring-label" x="500" y="432" text-anchor="middle">Risk Management</text>
 
-            <!-- tool nodes -->
-            <g class="dg-tool">
-              <rect x="80" y="100" width="155" height="60" rx="12"/><text x="157" y="135" text-anchor="middle">OpenClaw</text>
+            <!-- tool nodes (logo fills card when logos/*.png present; name shows as fallback) -->
+            <g class="dg-node">
+              <rect x="70" y="96" width="180" height="88" rx="14"/><text x="160" y="146" text-anchor="middle">OpenClaw</text>
+              <image href="logos/openclaw.png" x="82" y="106" width="156" height="68" preserveAspectRatio="xMidYMid meet"/>
             </g>
-            <g class="dg-tool">
-              <rect x="80" y="280" width="155" height="60" rx="12"/><text x="157" y="315" text-anchor="middle">HERMES-AGENT</text>
+            <g class="dg-node">
+              <rect x="70" y="266" width="180" height="88" rx="14"/><text x="160" y="316" text-anchor="middle">HERMES-AGENT</text>
+              <image href="logos/hermes-agent.png" x="82" y="276" width="156" height="68" preserveAspectRatio="xMidYMid meet"/>
             </g>
-            <g class="dg-tool">
-              <rect x="80" y="460" width="155" height="60" rx="12"/><text x="157" y="495" text-anchor="middle">NemoClaw</text>
+            <g class="dg-node">
+              <rect x="70" y="437" width="180" height="88" rx="14"/><text x="160" y="487" text-anchor="middle">NemoClaw</text>
+              <image href="logos/nemoclaw.png" x="82" y="447" width="156" height="68" preserveAspectRatio="xMidYMid meet"/>
             </g>
 
             <!-- center Argo node -->
             <g class="dg-center">
-              <rect x="415" y="255" width="170" height="110" rx="18" fill="url(#gnode)"/>
-              <g transform="translate(500,292)" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="-16,4 0,-11 16,4"/><polyline points="-16,18 0,3 16,18"/>
-              </g>
-              <text class="dg-center-t" x="500" y="345" text-anchor="middle">Argo Agent</text>
+              <rect x="393" y="205" width="214" height="196" rx="18" fill="#fff"/>
+              <circle cx="500" cy="272" r="52" fill="#0A070E"/>
+              <image href="keyframes/frame-4.jpg" x="428" y="200" width="144" height="144" preserveAspectRatio="xMidYMid slice" clip-path="url(#argoClip)"/>
+              <circle cx="500" cy="272" r="52" fill="none" stroke="#6FA83A" stroke-width="2.5"/>
+              <text class="dg-argo-name" x="500" y="368" text-anchor="middle">Argo Agent</text>
             </g>
 
             <!-- output nodes -->
             <g class="dg-out">
-              <rect x="780" y="110" width="170" height="52" rx="12"/><text x="865" y="141" text-anchor="middle">Business Growth</text>
-              <rect x="780" y="197" width="170" height="52" rx="12"/><text x="865" y="228" text-anchor="middle">Marketing</text>
-              <rect x="780" y="284" width="170" height="52" rx="12"/><text x="865" y="315" text-anchor="middle">Operations</text>
-              <rect x="780" y="371" width="170" height="52" rx="12"/><text x="865" y="402" text-anchor="middle">Customer Success</text>
-              <rect x="780" y="458" width="170" height="52" rx="12"/><text x="865" y="489" text-anchor="middle">Governance</text>
+              <rect x="760" y="92" width="180" height="60" rx="12"/><text x="850" y="127" text-anchor="middle">Business Growth</text>
+              <rect x="760" y="177" width="180" height="60" rx="12"/><text x="850" y="212" text-anchor="middle">Marketing</text>
+              <rect x="760" y="262" width="180" height="60" rx="12"/><text x="850" y="297" text-anchor="middle">Operations</text>
+              <rect x="760" y="347" width="180" height="60" rx="12"/><text x="850" y="382" text-anchor="middle">Customer Success</text>
+              <rect x="760" y="432" width="180" height="60" rx="12"/><text x="850" y="467" text-anchor="middle">Governance</text>
             </g>
           </svg>
         </div>
